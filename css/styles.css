@@ -137,13 +137,15 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  color: var(--primary-white-color);
+  fill: rgba(117, 117, 117, 1);
+  stroke: currentColor;
 }
 .address-icon-2 {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  color: var(--primary-white-color);
+  fill: rgba(117, 117, 117, 1);
+  stroke: currentColor;
 }
 .main {
   border-top: 1px solid rgba(236, 236, 236, 1);
