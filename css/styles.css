@@ -388,6 +388,20 @@ body {
 .footer-line {
   background-color: #2f303a;
 }
+.title-icons {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+.footer-social-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
 /* portfolio */
 .list-title-portfolio {
   color: var(--title-text-color);
