@@ -272,10 +272,18 @@ body {
   background-color: #ffffff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
 .team-text {
   padding: 30px;
   text-align: center;
+}
+.social-icons {
+  background: blue;
+}
+.social-icons-item {
+}
+.social-icons-link {
+}
+.social-icons-svg {
 }
 /* footer nav */
 .address-text {
