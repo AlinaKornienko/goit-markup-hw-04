@@ -113,8 +113,8 @@ body {
 .contacts {
   display: flex;
 }
-.contacts a {
-  display: block;
+.address-link {
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
@@ -123,23 +123,26 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  align-items: center;
+  justify-content: center;
 }
 .contacts a:hover,
 .contacts a:focus {
   color: var(--accent-color);
 }
-
 .contact-info:not(:last-child) {
   margin-right: 50px;
 }
 .address-icon {
   width: 16px;
   height: 12px;
+  margin-right: 10px;
   color: var(--primary-white-color);
 }
 .address-icon-2 {
   width: 10px;
   height: 16px;
+  margin-right: 10px;
   color: var(--primary-white-color);
 }
 .main {
