@@ -339,8 +339,14 @@ body {
 .our-clients-item {
   width: 170px;
   height: 92px;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
-.our-cliets-img {
+.our-clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.our-clients-img {
   width: 106px;
   height: 60px;
 }
