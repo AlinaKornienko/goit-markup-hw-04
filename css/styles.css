@@ -252,6 +252,18 @@ body {
 .skills-item:not(:last-child) {
   margin-right: 30px;
 }
+.skills-item-img {
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-backgound);
+  border-radius: 4px;
+}
+.skills-item-svg {
+  color: var(--title-text-color);
+}
 /* emplouments*/
 .section-employments {
   padding: 0;
@@ -316,6 +328,21 @@ body {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+}
+
+/* our clients */
+.our-clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-clients-item {
+  width: 170px;
+  height: 92px;
+}
+.our-cliets-img {
+  width: 106px;
+  height: 60px;
 }
 /* footer nav */
 .address-text {
