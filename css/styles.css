@@ -154,7 +154,11 @@ body {
 .hero-section {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: #2f303a;
+  background: linear-gradient(
+    to bottom,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
   background-image: url(../images/main-page/Img-hero.jpg);
   background-size: cover;
   max-width: 1600px;
@@ -351,6 +355,15 @@ body {
   height: 60px;
 }
 /* footer nav */
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
 .address-text {
   color: var(--primary-white-color);
   font-style: normal;
@@ -377,6 +390,9 @@ body {
   color: var(--accent-color);
 }
 .footer {
+  background-color: #2f303a;
+}
+.footer-line {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -384,24 +400,46 @@ body {
   padding-bottom: 60px;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
 }
-.footer-line {
-  background-color: #2f303a;
+.footer-address {
+  margin-right: 70px;
 }
 .title-icons {
   margin-top: 0;
   margin-bottom: 20px;
+  padding-top: 8px;
+  padding-bottom: 3px;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
 .footer-social-icons-svg {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: var(--primary-white-color);
 }
+.footer-social-icons-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-icons-link-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
 /* portfolio */
 .list-title-portfolio {
   color: var(--title-text-color);
