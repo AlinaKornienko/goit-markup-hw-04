@@ -337,15 +337,18 @@ body {
 }
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
-  padding: 12px;
+  width: 20px;
+  height: 20px;
+  fill: rgba(255, 255, 255, 1);
+  background: rgba(33, 150, 243, 1);
+}
+.social-icons-link:hover,
+.social-icons-link:focus {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: rgba(255, 255, 255, 1);
-  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
   background: rgba(33, 150, 243, 1);
 }
-
 .social-icons-svg {
   width: 20px;
   height: 20px;
@@ -368,10 +371,17 @@ body {
 .our-clients-item:not(:last-child) {
   margin-right: 30px;
 }
+.our-clients-item:hover,
+.our-clients-item:focus {
+  border: 1px solid rgba(33, 150, 243, 1);
+}
 .our-clients-svg {
   width: 106px;
   height: 60px;
   fill: rgba(175, 177, 184, 1);
+}
+.our-clients-position:hover .our-clients-svg {
+  fill: rgba(33, 150, 243, 1);
 }
 /* footer nav */
 .footer-logo {
