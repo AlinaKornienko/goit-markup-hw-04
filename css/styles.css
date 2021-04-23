@@ -459,14 +459,19 @@ body {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-social-icons-link-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.footer-social-icons-link:hover .footer-social-icons-svg,
+.footer-social-icons-link:focus .footer-social-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: rgba(255, 255, 255, 1);
+  background: rgba(33, 150, 243, 1);
+}
+.footer-social-icons-link:hover,
+.footer-social-icons-link:focus {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--accent-color);
+  background: rgba(33, 150, 243, 1);
 }
 
 /* portfolio */
