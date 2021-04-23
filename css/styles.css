@@ -3,6 +3,8 @@
   --primary-text-color: #757575;
   --accent-color: #2196f3;
   --primary-white-color: #fff;
+  --primary-black-color: #000;
+  --primary-background-color: #2f303a;
   --secondary-backgound: #f5f4fa;
 }
 html {
@@ -55,7 +57,7 @@ body {
   color: var(--accent-color);
 }
 .logo-second-header {
-  color: #000;
+  color: var(--primary-black-color);
 }
 .logo-second-footer {
   color: var(--primary-white-color);
@@ -152,16 +154,20 @@ body {
 }
 /* hero */
 .hero-section {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background: linear-gradient(
-    to bottom,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  );
-  background-image: url(../images/main-page/Img-hero.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/main-page/Img-hero.jpg);
+  background-color: var(--primary-background-color);
   background-size: cover;
-  max-width: 1600px;
   text-align: center;
 }
 .hero-title {
@@ -190,11 +196,13 @@ body {
 .button.primary {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  border-color: var(--accent-color);
   font-family: Roboto;
 }
 .button.filter {
   padding: 6px 22px;
   background-color: var(--secondary-backgound);
+  border-color: var(--secondary-backgound);
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -205,6 +213,10 @@ body {
 .button.filter:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  border-color: var(--accent-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 /* section */
 .section {
@@ -325,7 +337,13 @@ body {
 }
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
-  fill: var(--accent-color);
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: rgba(255, 255, 255, 1);
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  background: rgba(33, 150, 243, 1);
 }
 
 .social-icons-svg {
@@ -390,7 +408,7 @@ body {
   color: var(--accent-color);
 }
 .footer {
-  background-color: #2f303a;
+  background-color: var(--primary-background-color);
 }
 .footer-line {
   width: 1200px;
