@@ -362,26 +362,31 @@ body {
   justify-content: center;
 }
 .our-clients-item {
+  display: flex;
+  justify-content: center;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.our-clients-item:not(:last-child) {
-  margin-right: 30px;
-}
-.our-clients-item:hover,
-.our-clients-item:focus {
-  border: 1px solid rgba(33, 150, 243, 1);
+.our-clients-position {
+  width: 170px;
+  height: 92px;
 }
 .our-clients-svg {
   width: 106px;
   height: 60px;
   fill: rgba(175, 177, 184, 1);
 }
-.our-clients-position:hover .our-clients-svg {
+.our-clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.our-clients-position:hover .our-clients-svg,
+.our-clients-position:focus .our-clients-svg {
   fill: rgba(33, 150, 243, 1);
+}
+.our-clients-position:hover {
+  border: 1px solid rgba(33, 150, 243, 1);
 }
 /* footer nav */
 .footer-logo {
