@@ -275,8 +275,9 @@ body {
 .skills-item-img {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 270px;
-  padding: 25px 100px;
+  height: 120px;
   margin-bottom: 30px;
   background-color: var(--secondary-backgound);
   border-radius: 4px;
